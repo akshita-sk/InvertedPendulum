@@ -17,8 +17,7 @@ window = init_window(1080, 720)
 width, height = glfw.get_framebuffer_size(window)
 viewport = mujoco.MjrRect(0, 0, width, height)
 
-# model = mujoco.MjModel.from_xml_path('model/humanoid.xml')
-model = mujoco.MjModel.from_xml_path('model/hello.xml')
+model = mujoco.MjModel.from_xml_path('model/InvertedPendulum.xml')
 # model.nuserdata = 25
 data = mujoco.MjData(model)
 context = mujoco.MjrContext(model, mujoco.mjtFontScale.mjFONTSCALE_100)
